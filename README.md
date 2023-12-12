@@ -8,12 +8,13 @@ See - https://github.com/viktor-mazepa/tf-google-gke-cluster
 
 ## Inputs
 
-|       Name       |            Description           |  Type  |     Default     | Required |
+|       Name       |            Description           |  Type  |     Predefined value in vars.tfvars     | Required |
 |:----------------:|:--------------------------------:|:------:|:---------------:|:--------:|
 | GOOGLE_PROJECT   | GCP project name                 | string | "devops2023-405122"             |    no    |
 | GOOGLE_REGION    | GCP region name                  | string | "us-central1-c" |    no    |
 | GKE_NUM_NODES    | Number of nodes in the node pool | number | 2               |    no    |
 
+To apply ```vars.tfvars``` configuration use command: ```terraform apply -var-file="vars.tfvars"```
 ## Outputs
 kubeconfig - Generated Kubernetes configuration file
 
